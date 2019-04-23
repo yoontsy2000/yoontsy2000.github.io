@@ -1,55 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-  <title>My Website</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body>
-
-
-    
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">HOME</a>
-          <a class="navbar-brand" href="#">PROJECTS</a>
-            <a class="navbar-brand" href="#">RESUME</a>
-            <a class="navbar-brand" href="#">CONTACTS</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                <a class="nav-link" href="#">
-                    <span class="sr-only">(current)</span>
-                </a>
-                </li>
-            </ul>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Welcome!</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container headline">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top" style="color:white; font-size: 35px;">My CV</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#projects" style="color:white; font-size: 25px;">Projects</a>
+                    </li> 
+                </ul>
+                </div>
             </div>
-        </div>
         </nav>
 
-<div class="container-fluid">
-    
+        <p class="center headline title">
+            Hello world!
+        </p>
 
-  <h1>My Website</h1>
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-    </p> 
-</div>
+        <div class="icon-bar">
+            <a href="https://www.facebook.com/tsyoon2000?ref=bookmarks" class="facebook s1"><i class="fa fa-facebook"></i></a> 
+            <a href="#" class="twitter s2"><i class="fa fa-twitter"></i></a> 
+            <a href="mailto:tsyoon@bu.edu" class="google s3"><i class="fa fa-google"></i></a> 
+            <a href="https://www.linkedin.com/in/taesung-yoon-23169a174/" class="linkedin s4"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UC-nPZL5AbSR9YcqqzYjO1oQ" class="youtube s5"><i class="fa fa-youtube"></i></a> 
+        </div>
 
-</body>
+        
+
+        <script>    
+            ScrollReveal().reveal('.headline', {delay: 200});
+
+            ScrollReveal().reveal('.s1', {delay: 200})
+            ScrollReveal().reveal('.s2', {delay: 300})
+            ScrollReveal().reveal('.s3', {delay: 400})
+            ScrollReveal().reveal('.s4', {delay: 500})
+            ScrollReveal().reveal('.s5', {delay: 600})
+        </script>
+
+    </body>
 </html>
