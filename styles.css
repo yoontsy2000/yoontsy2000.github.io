@@ -1,5 +1,6 @@
 html {
   background-color: #222629;
+  overflow: hidden; 
 }
 
 body {
@@ -16,6 +17,15 @@ body {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 10%;
+  width: 100%;
+  color: white;
+  text-align: center;
 }
 
 .above {
