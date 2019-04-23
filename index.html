@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/css-doodle@0.6.1/css-doodle.min.js"></script>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <title>Welcome!</title>
     </head>
@@ -28,8 +29,13 @@
             </div>
         </nav>
 
-        <p class="center headline title">
-            Hello world!
+        <p class="center subreveal above">Hello world! My name is...</p>
+
+        <p class="center headline title"> Taesung Yoon
+            <div class="center subtitle">
+                <div class="item" data-aos="fade-left" data-aos-delay="2500">BU Class of 2022</div>
+                <div class="item" data-aos="fade-right" data-aos-delay="3000">Computer Science Major</div>
+            </div>
         </p>
 
 
@@ -41,16 +47,51 @@
             <a href="https://www.youtube.com/channel/UC-nPZL5AbSR9YcqqzYjO1oQ" class="youtube s5"><i class="fa fa-youtube"></i></a> 
         </div>
 
-        
+        <div id="doodle">
+                <css-doodle>
+                    :doodle {
+                        @grid: 1x3 / 100vmax;
+                    position: absolute;    top: 0; left: 0;
+                    z-index: -1;
+                    }
+                
+                    @size: 100% 150%;
+                    position: absolute;
+                
+                    background: @m(100, (
+                        linear-gradient(transparent, @p(
+                        #FFFDE1@repeat(2, @p([0-9a-f])), 
+                        #FB3569@repeat(2, @p([0-9a-f])) 
+                    ))
+                        @r(0%, 100%) @r(0%, 100%) /
+                        @r(1px) @r(23vmin)
+                        no-repeat
+                    ));
+                
+                    will-change: transform;
+                    animation: f 20s linear calc(-20s / @size() * @i()) infinite;
+                    @keyframes f {
+                        from { transform: translateY(-100%) }
+                        to { transform: translateY(100%) }
+                    }
+                </css-doodle>  
+                        
+            </div>
 
-        <script>    
-            ScrollReveal().reveal('.headline', {delay: 200});
+        <script>
 
-            ScrollReveal().reveal('.s1', {delay: 200})
-            ScrollReveal().reveal('.s2', {delay: 300})
-            ScrollReveal().reveal('.s3', {delay: 400})
-            ScrollReveal().reveal('.s4', {delay: 500})
-            ScrollReveal().reveal('.s5', {delay: 600})
+            AOS.init();
+
+            ScrollReveal().reveal('.s1', {delay: 500})
+            ScrollReveal().reveal('.s2', {delay: 600})
+            ScrollReveal().reveal('.s3', {delay: 700})
+            ScrollReveal().reveal('.s4', {delay: 800})
+            ScrollReveal().reveal('.s5', {delay: 900})
+
+            ScrollReveal().reveal('.subreveal', {delay: 1000})
+            ScrollReveal().reveal('.headline', {delay: 2000});
+            ScrollReveal().reveal('.tagline', {delay: 3000})
+            ScrollReveal().reveal('.navbar', {delay: 4000})
         </script>
 
     </body>
