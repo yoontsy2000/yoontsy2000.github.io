@@ -1,103 +1,103 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://unpkg.com/css-doodle@0.6.1/css-doodle.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <title>Welcome!</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container headline">
-                <a class="navbar-brand js-scroll-trigger" href="index.html" style="color:white; font-size: 35px;">Main</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#projects" style="color:white; font-size: 25px;">Projects</a>
-                    </li> 
-                </ul>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    </style>
+  </head>
+  <body>
+      <div class="columns">
+          <div class="column"></div>
+          <div class="column is-two-thirds">
+              <nav class="navbar" role="navigation" aria-label="main navigation">
+                  <div id="navbarMenuHeroA" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item is-active" href="./index.html">
+                          Home
+                        </a>
+                    </div>
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="./projects.html">
+                          Projects
+                        </a>
+                        <a class="navbar-item" href="./contacts.html">
+                          Contact
+                        </a>
+                        <span class="navbar-item">
+                          <a class="button is-black is-inverted" href="https://github.com/yoontsy2000">
+                            <span class="icon">
+                              <i class="fab fa-github"></i>
+                            </span>
+                            <span>Github</span>
+                          </a>
+                        </span>
+                  </div>
                 </div>
-            </div>
-        </nav>
+              </nav>
+          </div>
+          <div class="column"></div>
+      </div>
 
-        <h1 class="center subreveal above">Projects</h1>
-
-        <p class="center headline title"> 
-            <div class="center subtitle">
-                <div class="item" data-aos="fade-left" data-aos-delay="2500"><a href="http://down2dine.com">Down2Dine</a></div>
-                <div class="item" data-aos="fade-right" data-aos-delay="3000">                    <a href="https://github.com/jinyoungbang/Gif-Me-The-Weather">GIF Me the Weather</a>
+      <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column"></div>
+                <div class="column is-three-fifths center">
+                    <section class="hero">
+                      <div class="hero-body">
+                        <div class="container">
+                          <h1 class="title">
+                            <i class="fas fa-paw"></i> <strong>Randoggo</strong>
+                          </h1>
+                          <h2 class="subtitle">
+                            <br />
+                            <ul>
+                                <li><i class="fas fa-angle-double-right"></i> A subscription-based web application focused to improve subscribers’ day by sending GIFs of dogs via email</li>
+                                <br />
+                                <li><i class="fas fa-angle-double-right"></i> Wireframed front-end of the project using <strong>Bulma</strong> and <strong>Javascript</strong>, and combined it with back-end through <strong>Flask</strong></li>
+                                <br /><br />
+                            </ul>
+                          </h2>
+                          <h1 class="title">
+                            <i class="fas fa-utensils"></i> <strong>Down2Dine</strong>
+                          </h1>
+                          <h2 class="subtitle">
+                            <br />
+                            <ul>
+                                <li><i class="fas fa-angle-double-right"></i> A web application that searches three separate restaurants based on the users’ inputted meal budget of the day</li>
+                                <br />
+                                <li><i class="fas fa-angle-double-right"></i> Utilized Google Maps & Geocode and Zomato API, and further implemented API request/response to return personalized results</li>
+                                <br /><br />
+                            </ul>
+                          </h2>
+                          <h1 class="title">
+                            <i class="fas fa-umbrella"></i> <strong>GIF Me The Weather</strong>
+                          </h1>
+                          <h2 class="subtitle">
+                            <br />
+                            <ul>
+                                <li><i class="fas fa-angle-double-right"></i> Utilized GIPHY API and Flask to create a website that receives a user input of a location and returns a GIF related to the weather in that area</li>
+                                <br />
+                            </ul>
+                          </h2>
+                        </div>
+                      </div>
+                    </section>
                 </div>
+                <div class="column"></div>
             </div>
-        </p>
-
-        <footer>© Taesung Yoon. Created using HTML5, Bootstrap, Javascript(css-doodle, aos)</footer>
-
-
-        <div class="icon-bar">
-            <a href="https://www.facebook.com/tsyoon2000?ref=bookmarks" class="facebook s1"><i class="fa fa-facebook"></i></a> 
-            <a href="#" class="twitter s2"><i class="fa fa-twitter"></i></a> 
-            <a href="mailto:tsyoon@bu.edu" class="google s3"><i class="fa fa-google"></i></a> 
-            <a href="https://www.linkedin.com/in/taesung-yoon-23169a174/" class="linkedin s4"><i class="fa fa-linkedin"></i></a>
-            <a href="https://www.youtube.com/channel/UC-nPZL5AbSR9YcqqzYjO1oQ" class="youtube s5"><i class="fa fa-youtube"></i></a> 
         </div>
-
-
-        <div id="doodle">
-                <css-doodle>
-                    :doodle {
-                        @grid: 1x3 / 100vmax;
-                    position: absolute;    top: 0; left: 0;
-                    z-index: -1;
-                    }
-                
-                    @size: 100% 150%;
-                    position: absolute;
-                
-                    background: @m(100, (
-                        linear-gradient(transparent, @p(
-                        #FFFDE1@repeat(2, @p([0-9a-f])), 
-                        #FB3569@repeat(2, @p([0-9a-f])) 
-                    ))
-                        @r(0%, 100%) @r(0%, 100%) /
-                        @r(1px) @r(23vmin)
-                        no-repeat
-                    ));
-                
-                    will-change: transform;
-                    animation: f 20s linear calc(-20s / @size() * @i()) infinite;
-                    @keyframes f {
-                        from { transform: translateY(-100%) }
-                        to { transform: translateY(100%) }
-                    }
-                </css-doodle>  
-                        
-            </div>
-
-        <script>
-
-            AOS.init();
-
-            ScrollReveal().reveal('.s1', {delay: 500});
-            ScrollReveal().reveal('.s2', {delay: 600});
-            ScrollReveal().reveal('.s3', {delay: 700});
-            ScrollReveal().reveal('.s4', {delay: 800});
-            ScrollReveal().reveal('.s5', {delay: 900});
-
-            ScrollReveal().reveal('.subreveal', {delay: 1000});
-            ScrollReveal().reveal('.headline', {delay: 2000});
-            ScrollReveal().reveal('.tagline', {delay: 3000});
-            ScrollReveal().reveal('.navbar', {delay: 4000});
-            ScrollReveal().reveal('footer', {delay: 4000});
-        </script>
-
-    </body>
+      </section>
+  </body>
 </html>
