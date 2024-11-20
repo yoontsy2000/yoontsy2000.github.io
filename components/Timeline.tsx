@@ -1,18 +1,28 @@
-import TimelineItem from "@/components/TimelineItem"
+// import TimelineItem from "@/components/TimelineItem"
 
 export default function Timeline() {
   return (
     <ul className="">
-      <li className="flex even:justify-end odd:justify-start">
-        <TimelineItem date="05-2018">
-          Attended Boston University
-        </TimelineItem>
-      </li>
-      <li className="flex even:justify-end odd:justify-start">  
-        <TimelineItem date="02-2019">
-          Won 2nd Place in HackNYU
-        </TimelineItem>
-      </li>
+      {
+        timeline.map((item) => (
+          <li key={item.time} className="flex even:flex-row-reverse odd:justify-start">
+            <p>{item.content}</p>
+          </li>
+        ))
+      }
     </ul>
   )
 }
+
+const timeline = [
+  {
+    time: '2018',
+    title: 'Attended Boston University',
+    content: 'Lorem Ipsum'
+  },
+  {
+    time: '2019',
+    title: 'Won HackNYU Competition',
+    content: 'Won HackNYU Competition'
+  }
+]
