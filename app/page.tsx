@@ -1,4 +1,5 @@
 import NavMenu from "@/components/NavMenu";
+import Timeline from "@/components/Timeline";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
               <ul>
                 <li>🖥️ frontend engineering</li>
                 <li>🧑‍💻 human-computer interaction</li>
-                <li>🧑‍💻 photography</li>
+                <li>📷 photography</li>
                 <li>🎥 films</li>
                 <li>📚 books</li>
               </ul>
@@ -27,33 +28,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="px-6 pt-[60px]">
-        <h2 className="p-16 text-5xl font-bold">timeline</h2>
-        <div className="flex justify-between">
-          <p className="px-16 text-2xl font-semibold">Graduated with a Bachelor's in Computer Science</p>
-          <p className="px-16 text-2xl font-semibold">May 2024</p>
-        </div>
-        <div className="flex justify-between">
-          <p className="px-16 text-2xl font-semibold">Resumed Studies at Boston University</p>
-          <p className="px-16 text-2xl font-semibold">Sep 2023 - May 2024</p>
-        </div>
-        <div className="flex justify-between">
-          <p className="px-16 text-2xl font-semibold">Military Service</p>
-          <p className="px-16 text-2xl font-semibold">Jan 2022 - July 2023</p>
-        </div>
-        <div className="flex justify-between">
-          <p className="px-16 text-2xl font-semibold">Internship at Boston University: Software and Applications Lab</p>
-          <p className="px-16 text-2xl font-semibold">May 2021 - Aug 2021</p>
-        </div>
-        <div className="flex justify-between">
-          <p className="px-16 text-2xl font-semibold">Boston University: Spark!</p>
-          <p className="px-16 text-2xl font-semibold">Sep 2020 - Dec 2020</p>
-        </div>
-        <div className="flex justify-between">
-          <p className="px-16 text-2xl font-semibold">Internship at SuperTree</p>
-          <p className="px-16 text-2xl font-semibold">May 2020 - Aug 2020</p>
-        </div>
-      </section>
+      <Timeline/>
       <section className="px-6 pt-[60px]">
         <h2 className="p-16 text-5xl font-bold">current and past projects</h2>
         <div className="flex justify-between">
@@ -71,7 +46,7 @@ export default function Home() {
         </div>
 
         <div className="flex justify-between">
-          <p className="px-16 text-2xl font-semibold">HackNYU Winner: Down2Dine</p>
+          <p className="px-16 text-2xl font-semibold">HackNYU Winner: Down 2 Dine</p>
           <p className="px-16 text-2xl font-semibold">2019</p>
         </div>
 
