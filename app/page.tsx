@@ -1,7 +1,6 @@
 import NavMenu from "@/components/NavMenu";
 
 export default function Home() {
-  const pathname = usePathname();
   return (
     <div className="flex flex-col min-h-screen">
       <NavMenu />
