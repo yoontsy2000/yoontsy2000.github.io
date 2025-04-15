@@ -23,6 +23,9 @@ export default function Projects() {
         </li>
         <li>Planning to create Spotify widget using ElKowars wacky widgets</li>
       </ul>
+      <p className="character">
+        Past projects can be found in my Github or my resume.
+      </p>
     </div>
   );
 }
