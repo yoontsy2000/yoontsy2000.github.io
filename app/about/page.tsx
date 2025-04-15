@@ -18,7 +18,7 @@ export default function About() {
         <li>Front-end web development</li>
       </ul>
       <p className="character">Technical skills:</p>
-      <ul className="dialogue-list">
+      <ul className="dialogue-list justify-center">
         <li>
           <strong>Languages</strong>
           <ul>
