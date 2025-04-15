@@ -1,0 +1,19 @@
+.scene-heading {
+  @apply uppercase mb-6 text-gray-700;
+}
+
+.character {
+  @apply uppercase text-center font-bold my-8;
+}
+
+.action {
+  @apply mb-4;
+}
+
+.dialogue {
+  @apply text-center mx-auto w-4/5 mb-8;
+}
+
+.dialogue-list {
+  @apply flex flex-col md:flex-row gap-8 items-start;
+}
