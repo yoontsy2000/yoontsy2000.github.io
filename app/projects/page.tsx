@@ -1,4 +1,5 @@
 import "./../script.css";
+import { RiJavascriptFill } from "react-icons/ri";
 
 export default function Projects() {
   return (
@@ -15,13 +16,13 @@ export default function Projects() {
           Supports drag-and-drop image upload integrated with AWS S3 Bucket.
         </li>
       </ul>
-      <p className="character">[ONGOING] PROJECT: custom eww widgets</p>
+      <p className="character">[ONGOING] PROJECT: custom ags widgets</p>
       <ul className="dialogue">
         <li>
           Small hobby project for ricing Hyprland desktop environment running on
           Arch Linux
         </li>
-        <li>Planning to create Spotify widget using ElKowars wacky widgets</li>
+        <li>Planning to create Spotify widget using Astal</li>
       </ul>
       <p className="character">
         Past projects can be found in my Github or my resume.

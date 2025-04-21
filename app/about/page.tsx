@@ -11,12 +11,7 @@ export default function About() {
         <br />
         Majored in Computer Science
       </p>
-      <p className="character">Current hobbies & interests</p>
-      <ul className="dialogue">
-        <li>Photography</li>
-        <li>Arch Linux</li>
-        <li>Front-end web development</li>
-      </ul>
+
       <p className="character">Technical skills:</p>
       <ul className="dialogue-list justify-center">
         <li>
@@ -67,6 +62,12 @@ export default function About() {
             <li>CI/CD Pipelines</li>
           </ul>
         </li>
+      </ul>
+      <p className="character">Current hobbies & interests</p>
+      <ul className="dialogue">
+        <li>Photography / Photo Editing</li>
+        <li>Arch Linux</li>
+        <li>Front-end web development</li>
       </ul>
     </div>
   );
